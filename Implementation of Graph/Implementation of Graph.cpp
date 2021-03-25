@@ -2,7 +2,7 @@
 using namespace std;
 
 
-void print(int *edges,int n, int sv,int *visited){
+void print(int **edges,int n, int sv,int *visited){
     
     cout<<sv;
     visited[sv]=true;
@@ -52,5 +52,6 @@ int main()
     for(int i=0;i<n;i++){
         visited[i]=false;
     }
-    void print(*edges,n,0,*visited);
+    
+    print(edges,n,0,visited);
 }
